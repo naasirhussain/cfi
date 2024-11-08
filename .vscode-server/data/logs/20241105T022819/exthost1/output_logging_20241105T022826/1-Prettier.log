@@ -1,0 +1,3188 @@
+["INFO" - 2:28:31 AM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 2:28:32 AM] Extension Version: 11.0.0.
+["INFO" - 2:49:49 AM] Formatting file:///home/naasir/naasir-cfi/classroom/18.js
+["INFO" - 2:49:49 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 2:49:49 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 2:49:49 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 2:49:49 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:49:49 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/18.js",
+  "parser": "babel"
+}
+["ERROR" - 2:49:49 AM] Error formatting document.
+["ERROR" - 2:49:49 AM] Unexpected token (121:1)
+  119 |     console.log("Grade F");
+  120 | }
+> 121 | }
+      | ^
+SyntaxError: Unexpected token (121:1)
+  119 |     console.log("Grade F");
+  120 | }
+> 121 | }
+      | ^
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9021:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async g$.provideDocumentFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134090)
+["INFO" - 2:49:49 AM] Formatting completed in 212ms.
+["INFO" - 2:49:59 AM] Formatting file:///home/naasir/naasir-cfi/classroom/18.js
+["INFO" - 2:49:59 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 2:49:59 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 2:49:59 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 2:49:59 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:49:59 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/18.js",
+  "parser": "babel"
+}
+["ERROR" - 2:49:59 AM] Error formatting document.
+["ERROR" - 2:49:59 AM] Unexpected token (121:1)
+  119 |     console.log("Grade F");
+  120 | }
+> 121 | }
+      | ^
+SyntaxError: Unexpected token (121:1)
+  119 |     console.log("Grade F");
+  120 | }
+> 121 | }
+      | ^
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9021:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async g$.provideDocumentFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134090)
+["INFO" - 2:49:59 AM] Formatting completed in 28ms.
+["INFO" - 2:56:16 AM] Formatting file:///home/naasir/naasir-cfi/classroom/18.js
+["INFO" - 2:56:16 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 2:56:16 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 2:56:16 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 2:56:16 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:56:16 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/18.js",
+  "parser": "babel"
+}
+["ERROR" - 2:56:16 AM] Error formatting document.
+["ERROR" - 2:56:16 AM] Unexpected token (29:5)
+  27 | let age = 18;
+  28 | if (age >= 17){
+> 29 |     else{
+     |     ^
+  30 |         console.log("less than 18");
+  31 |     }
+  32 | }
+SyntaxError: Unexpected token (29:5)
+  27 | let age = 18;
+  28 | if (age >= 17){
+> 29 |     else{
+     |     ^
+  30 |         console.log("less than 18");
+  31 |     }
+  32 | }
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9021:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async g$.provideDocumentFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134090)
+["INFO" - 2:56:16 AM] Formatting completed in 25ms.
+["INFO" - 3:03:32 AM] Formatting file:///home/naasir/naasir-cfi/classroom/18.js
+["INFO" - 3:03:32 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 3:03:32 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 3:03:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 3:03:32 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:03:32 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/18.js",
+  "parser": "babel",
+  "rangeEnd": 479,
+  "rangeStart": 361
+}
+["ERROR" - 3:03:32 AM] Error formatting document.
+["ERROR" - 3:03:32 AM] Unexpected token (68:1)
+  66 | // } else {
+  67 | //     console.log("no selected color");
+> 68 | }                                
+     | ^
+  69 |                         // prints ( no selcted color)
+  70 |
+  71 |
+SyntaxError: Unexpected token (68:1)
+  66 | // } else {
+  67 | //     console.log("no selected color");
+> 68 | }                                
+     | ^
+  69 |                         // prints ( no selcted color)
+  70 |
+  71 |
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at formatRange (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8903:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9016:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async mb.provideDocumentRangeFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134322)
+["INFO" - 3:03:32 AM] Formatting completed in 36ms.
+["INFO" - 3:24:07 AM] Formatting file:///home/naasir/naasir-cfi/classroom/21.js
+["INFO" - 3:24:07 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 3:24:07 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 3:24:07 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 3:24:07 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:24:07 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/21.js",
+  "parser": "babel"
+}
+["INFO" - 3:24:07 AM] Formatting completed in 111ms.
+["INFO" - 3:40:14 AM] Formatting file:///home/naasir/naasir-cfi/classroom/22.js
+["INFO" - 3:40:14 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 3:40:14 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 3:40:14 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 3:40:14 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:40:14 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/22.js",
+  "parser": "babel",
+  "rangeEnd": 748,
+  "rangeStart": 440
+}
+["ERROR" - 3:40:14 AM] Error formatting document.
+["ERROR" - 3:40:14 AM] Unexpected token, expected "(" (35:20)
+  33 |
+  34 |  
+> 35 |   function sayHello
+     |                    ^
+SyntaxError: Unexpected token, expected "(" (35:20)
+  33 |
+  34 |  
+> 35 |   function sayHello
+     |                    ^
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at formatRange (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8903:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9016:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async mb.provideDocumentRangeFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134322)
+["INFO" - 3:40:14 AM] Formatting completed in 57ms.
+["INFO" - 3:40:20 AM] Formatting file:///home/naasir/naasir-cfi/classroom/22.js
+["INFO" - 3:40:20 AM] PrettierInstance:
+{
+  "doc": {
+    "builders": {
+      "line": {
+        "type": "line"
+      },
+      "softline": {
+        "type": "line",
+        "soft": true
+      },
+      "hardline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "literalline": {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true,
+            "literal": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      },
+      "lineSuffixBoundary": {
+        "type": "line-suffix-boundary"
+      },
+      "cursor": {
+        "type": "cursor"
+      },
+      "breakParent": {
+        "type": "break-parent"
+      },
+      "trim": {
+        "type": "trim"
+      },
+      "hardlineWithoutBreakParent": {
+        "type": "line",
+        "hard": true
+      },
+      "literallineWithoutBreakParent": {
+        "type": "line",
+        "hard": true,
+        "literal": true
+      }
+    },
+    "printer": {},
+    "utils": {},
+    "debug": {}
+  },
+  "version": "2.8.8",
+  "util": {},
+  "__internal": {
+    "errors": {},
+    "coreOptions": {
+      "CATEGORY_CONFIG": "Config",
+      "CATEGORY_EDITOR": "Editor",
+      "CATEGORY_FORMAT": "Format",
+      "CATEGORY_OTHER": "Other",
+      "CATEGORY_OUTPUT": "Output",
+      "CATEGORY_GLOBAL": "Global",
+      "CATEGORY_SPECIAL": "Special",
+      "options": {
+        "cursorOffset": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": -1,
+          "range": {
+            "start": -1,
+            "end": null,
+            "step": 1
+          },
+          "description": "Print (to stderr) where a cursor at the given position would move to after formatting.\nThis option cannot be used with --range-start and --range-end.",
+          "cliCategory": "Editor"
+        },
+        "endOfLine": {
+          "since": "1.15.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "1.15.0",
+              "value": "auto"
+            },
+            {
+              "since": "2.0.0",
+              "value": "lf"
+            }
+          ],
+          "description": "Which end of line characters to apply.",
+          "choices": [
+            {
+              "value": "lf",
+              "description": "Line Feed only (\\n), common on Linux and macOS as well as inside git repos"
+            },
+            {
+              "value": "crlf",
+              "description": "Carriage Return + Line Feed characters (\\r\\n), common on Windows"
+            },
+            {
+              "value": "cr",
+              "description": "Carriage Return character only (\\r), used very rarely"
+            },
+            {
+              "value": "auto",
+              "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)"
+            }
+          ]
+        },
+        "filepath": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "path",
+          "description": "Specify the input filepath. This will be used to do parser inference.",
+          "cliName": "stdin-filepath",
+          "cliCategory": "Other",
+          "cliDescription": "Path to the file to pretend that stdin comes from."
+        },
+        "insertPragma": {
+          "since": "1.8.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Insert @format pragma into file's first docblock comment.",
+          "cliCategory": "Other"
+        },
+        "parser": {
+          "since": "0.0.10",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "0.0.10",
+              "value": "babylon"
+            },
+            {
+              "since": "1.13.0"
+            }
+          ],
+          "description": "Which parser to use.",
+          "choices": [
+            {
+              "value": "flow",
+              "description": "Flow"
+            },
+            {
+              "value": "babel",
+              "since": "1.16.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "babel-flow",
+              "since": "1.16.0",
+              "description": "Flow"
+            },
+            {
+              "value": "babel-ts",
+              "since": "2.0.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "typescript",
+              "since": "1.4.0",
+              "description": "TypeScript"
+            },
+            {
+              "value": "acorn",
+              "since": "2.6.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "espree",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "meriyah",
+              "since": "2.2.0",
+              "description": "JavaScript"
+            },
+            {
+              "value": "css",
+              "since": "1.7.1",
+              "description": "CSS"
+            },
+            {
+              "value": "less",
+              "since": "1.7.1",
+              "description": "Less"
+            },
+            {
+              "value": "scss",
+              "since": "1.7.1",
+              "description": "SCSS"
+            },
+            {
+              "value": "json",
+              "since": "1.5.0",
+              "description": "JSON"
+            },
+            {
+              "value": "json5",
+              "since": "1.13.0",
+              "description": "JSON5"
+            },
+            {
+              "value": "json-stringify",
+              "since": "1.13.0",
+              "description": "JSON.stringify"
+            },
+            {
+              "value": "graphql",
+              "since": "1.5.0",
+              "description": "GraphQL"
+            },
+            {
+              "value": "markdown",
+              "since": "1.8.0",
+              "description": "Markdown"
+            },
+            {
+              "value": "mdx",
+              "since": "1.15.0",
+              "description": "MDX"
+            },
+            {
+              "value": "vue",
+              "since": "1.10.0",
+              "description": "Vue"
+            },
+            {
+              "value": "yaml",
+              "since": "1.14.0",
+              "description": "YAML"
+            },
+            {
+              "value": "glimmer",
+              "since": "2.3.0",
+              "description": "Ember / Handlebars"
+            },
+            {
+              "value": "html",
+              "since": "1.15.0",
+              "description": "HTML"
+            },
+            {
+              "value": "angular",
+              "since": "1.15.0",
+              "description": "Angular"
+            },
+            {
+              "value": "lwc",
+              "since": "1.17.0",
+              "description": "Lightning Web Components"
+            }
+          ]
+        },
+        "plugins": {
+          "since": "1.10.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+          "cliName": "plugin",
+          "cliCategory": "Config"
+        },
+        "pluginSearchDirs": {
+          "since": "1.13.0",
+          "type": "path",
+          "array": true,
+          "default": [
+            {
+              "value": []
+            }
+          ],
+          "category": "Global",
+          "description": "Custom directory that contains prettier plugins in node_modules subdirectory.\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.",
+          "cliName": "plugin-search-dir",
+          "cliCategory": "Config"
+        },
+        "printWidth": {
+          "since": "0.0.0",
+          "category": "Global",
+          "type": "int",
+          "default": 80,
+          "description": "The line length where Prettier will try wrap.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "rangeEnd": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": null,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "rangeStart": {
+          "since": "1.4.0",
+          "category": "Special",
+          "type": "int",
+          "default": 0,
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          },
+          "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.\nThis option cannot be used with --cursor-offset.",
+          "cliCategory": "Editor"
+        },
+        "requirePragma": {
+          "since": "1.7.0",
+          "category": "Special",
+          "type": "boolean",
+          "default": false,
+          "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+          "cliCategory": "Other"
+        },
+        "tabWidth": {
+          "type": "int",
+          "category": "Global",
+          "default": 2,
+          "description": "Number of spaces per indentation level.",
+          "range": {
+            "start": 0,
+            "end": null,
+            "step": 1
+          }
+        },
+        "useTabs": {
+          "since": "1.0.0",
+          "category": "Global",
+          "type": "boolean",
+          "default": false,
+          "description": "Indent with tabs instead of spaces."
+        },
+        "embeddedLanguageFormatting": {
+          "since": "2.1.0",
+          "category": "Global",
+          "type": "choice",
+          "default": [
+            {
+              "since": "2.1.0",
+              "value": "auto"
+            }
+          ],
+          "description": "Control how Prettier formats quoted code embedded in the file.",
+          "choices": [
+            {
+              "value": "auto",
+              "description": "Format embedded code if Prettier can automatically identify it."
+            },
+            {
+              "value": "off",
+              "description": "Never automatically format embedded code."
+            }
+          ]
+        }
+      }
+    },
+    "optionsModule": {
+      "hiddenDefaults": {
+        "astFormat": "estree",
+        "printer": {},
+        "locStart": null,
+        "locEnd": null
+      }
+    },
+    "optionsNormalizer": {},
+    "utils": {}
+  },
+  "__debug": {}
+}
+["INFO" - 3:40:20 AM] Using ignore file (if present) at /home/naasir/naasir-cfi/classroom/.prettierignore
+["INFO" - 3:40:20 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 3:40:20 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:40:20 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "experimentalTernaries": false,
+  "filepath": "/home/naasir/naasir-cfi/classroom/22.js",
+  "parser": "babel"
+}
+["ERROR" - 3:40:20 AM] Error formatting document.
+["ERROR" - 3:40:20 AM] Unexpected token, expected "(" (35:20)
+  33 |
+  34 |  
+> 35 |   function sayHello
+     |                    ^
+SyntaxError: Unexpected token, expected "(" (35:20)
+  33 |
+  34 |  
+> 35 |   function sayHello
+     |                    ^
+	at p (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/parser-babel.js:29:54501)
+	at Object.parse (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:9021:18)
+	at /home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38183:12
+	at Object.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/node_modules/prettier/index.js:38197:12)
+	at t.default.format (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:16369)
+	at async t.PrettierEditProvider.provideEdits (/home/naasir/.vscode-server/extensions/esbenp.prettier-vscode-11.0.0/dist/extension.js:1:12927)
+	at async g$.provideDocumentFormattingEdits (file:///home/naasir/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/vs/workbench/api/node/extensionHostProcess.js:137:134090)
+["INFO" - 3:40:20 AM] Formatting completed in 21ms.

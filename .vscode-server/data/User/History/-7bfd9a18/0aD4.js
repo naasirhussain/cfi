@@ -1,0 +1,6 @@
+/*
+//  Symbols
+: - colon
+/ - slash
+$ - dollar
+% - 

@@ -1,0 +1,18 @@
+2024-11-05 02:28:26.756 [info] Extension host with pid 328 started
+2024-11-05 02:28:26.756 [error] Error: EEXIST: file already exists, open '/home/naasir/.vscode-server/data/User/workspaceStorage/c7fd073e8f5fe699376efda812166955/vscode.lock'
+2024-11-05 02:28:26.756 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/c7fd073e8f5fe699376efda812166955/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-11-05 02:28:26.777 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/c7fd073e8f5fe699376efda812166955/vscode.lock': The pid 25121 appears to be gone.
+2024-11-05 02:28:26.785 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/c7fd073e8f5fe699376efda812166955/vscode.lock': Deleting a stale lock.
+2024-11-05 02:28:27.667 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-05 02:28:27.669 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2024-11-05 02:28:28.212 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/c7fd073e8f5fe699376efda812166955/vscode.lock': Lock acquired.
+2024-11-05 02:28:29.264 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-11-05 02:28:29.460 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-11-05 02:28:29.460 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-05 02:28:30.637 [info] Eager extensions activated
+2024-11-05 02:28:30.671 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-05 02:28:30.673 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-05 02:28:30.674 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2024-11-05 02:28:30.675 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-11-05 02:49:02.922 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-11-05 02:49:53.120 [info] ExtensionService#_doActivateExtension vscode.references-view, startup: false, activationEvent: 'onCommand:references-view.showCallHierarchy'

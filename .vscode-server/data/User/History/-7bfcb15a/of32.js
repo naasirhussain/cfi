@@ -1,0 +1,15 @@
+// Implicit Conversion
+
+// 1. Any Datatype to String ( Using + operator)
+
+let grade = "2" + 3;
+console.log(grade, t);   // prints 23
+
+grade = "4" + true;
+console.log(grade);  // 4true
+
+grade = "55" + null;
+console.log(grade);  //  55null
+
+grade = "5" + undefined;
+console.log(grade);   //5undefined 

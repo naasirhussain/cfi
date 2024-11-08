@@ -1,0 +1,33 @@
+// Arrays 
+// ---> An array is an ordered list of values. these can be any 
+// type and an array can store multiple types at once.
+
+let numbers = [ 1, 2, 3, 4, 5, 6, 7];
+ //             0  1  2   3  4  5  6
+
+let mixedarray = [1, "Hello", true, {id: 3456}, [12, 13]];
+              //  0     1      2        3          4    
+// array start with 0th index
+ // Acessing elements
+
+ console.log(numbers[2], numbers[4]);
+// prints 3  5 
+
+console.log(mixedarray[3]); // gives id: 3456 - if want only 3456 
+console.log(mixedarray[3].id); // gives only 3456
+
+console.log(mixedarray[4]);  // prints [ 12,13]
+console.log(mixedarray[4][0]); // prints only 12 (giving path 4 & 0)
+
+
+// modifying elements
+
+numbers[2] = 10;
+console.log(numbers);
+
+
+
+
+
+
+

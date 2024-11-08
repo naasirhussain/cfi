@@ -1,0 +1,241 @@
+2024-11-01 02:58:42.928 [info] Extension host with pid 1114 started
+2024-11-01 02:58:42.982 [info] Eager extensions activated
+2024-11-01 02:58:43.088 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/cf202fe316e4b9954dcfadf458a3668a/vscode.lock': Lock acquired.
+2024-11-01 02:58:44.839 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-01 02:58:44.840 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2024-11-01 02:58:44.841 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-01 02:58:44.841 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-11-01 02:58:45.056 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2024-11-01 02:58:45.057 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2024-11-01 02:58:45.616 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-01 02:58:46.047 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:58:47.738 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:58:49.775 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.824 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:54.971 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:58:55.826 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:55.831 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:55.832 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:55.834 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:55.835 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:58:55.836 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1032588)
+	at ChildProcess.emit (node:events:531:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2024-11-01 02:59:00.158 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:59:40.540 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8711
+2024-11-01 02:59:41.184 [info] Extension host terminating: received terminate message from renderer
+2024-11-01 02:59:41.185 [info] Lock '/home/naasir/.vscode-server/data/User/workspaceStorage/cf202fe316e4b9954dcfadf458a3668a/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-11-01 02:59:41.209 [error] Canceled: Canceled
+	at Ac (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:7:1122)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:152630
+	at Array.forEach (<anonymous>)
+	at Zb.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:152570)
+	at hB.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:10085)
+	at M3.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-11-01 02:59:41.209 [error] Canceled: Canceled
+	at Ac (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:7:1122)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:152630
+	at Array.forEach (<anonymous>)
+	at Zb.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:152570)
+	at hB.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:10085)
+	at M3.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-11-01 02:59:41.210 [error] Canceled: Canceled
+	at new eA (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at gh.O [as value] (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:953034)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at Object.p [as dispose] (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:973612)
+	at /home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:979734
+	at Array.forEach (<anonymous>)
+	at f.dispose (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:979720)
+	at D1.<anonymous> (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+	at D1.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+	at D1.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:955332)
+	at D1.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+	at Si (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+	at Object.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at hB.eb (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+	at Array.map (<anonymous>)
+	at hB.$ (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+	at hB.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+	at M3.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-11-01 02:59:41.211 [error] Canceled: Canceled
+	at new eA (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at set hasGitHubRepositories [as hasGitHubRepositories] (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/github/dist/extension.js:2:321578)
+	at /home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/github/dist/extension.js:2:322537
+	at gh.value (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:1061875)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at Object.p [as dispose] (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:973612)
+	at /home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:979734
+	at Array.forEach (<anonymous>)
+	at f.dispose (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:979720)
+	at D1.<anonymous> (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+	at D1.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+	at D1.<anonymous> (/home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/main.js:2:955332)
+	at D1.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+	at Si (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+	at Object.dispose (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at hB.eb (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+	at Array.map (<anonymous>)
+	at hB.$ (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+	at hB.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+	at M3.terminate (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/naasir/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-11-01 02:59:41.211 [info] Extension host with pid 1114 exiting with code 0

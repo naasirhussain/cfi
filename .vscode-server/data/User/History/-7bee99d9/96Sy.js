@@ -1,0 +1,2 @@
+//  5. Arrow Function
+

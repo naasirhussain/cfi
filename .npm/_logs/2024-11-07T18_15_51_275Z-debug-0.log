@@ -1,0 +1,33 @@
+0 verbose cli /home/naasir/.nvm/versions/node/v23.1.0/bin/node /home/naasir/.nvm/versions/node/v23.1.0/bin/npm
+1 info using npm@10.9.0
+2 info using node@v23.1.0
+3 silly config load:file:/home/naasir/.nvm/versions/node/v23.1.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/naasir/.cache/typescript/5.6/.npmrc
+5 silly config load:file:/home/naasir/.npmrc
+6 silly config load:file:/home/naasir/.nvm/versions/node/v23.1.0/etc/npmrc
+7 verbose title npm install types-registry@latest
+8 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+9 verbose logfile logs-max:10 dir:/home/naasir/.npm/_logs/2024-11-07T18_15_51_275Z-
+10 verbose logfile /home/naasir/.npm/_logs/2024-11-07T18_15_51_275Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2038693888 maxSize:509673472 maxEntrySize:254836736
+14 silly packumentCache corgi:https://registry.npmjs.org/types-registry cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/types-registry 529ms (cache revalidated)
+16 silly packumentCache corgi:https://registry.npmjs.org/types-registry set size:583952 disposed:false
+17 silly idealTree buildDeps
+18 silly fetch manifest types-registry@0.1.693
+19 silly packumentCache full:https://registry.npmjs.org/types-registry cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/types-registry 123ms (cache revalidated)
+21 silly packumentCache full:https://registry.npmjs.org/types-registry set size:1217388 disposed:false
+22 silly placeDep ROOT types-registry@0.1.693 REPLACE for:  want: 0.1.693
+23 silly reify moves {}
+24 silly audit bulk request { 'types-registry': [ '0.1.693' ] }
+25 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 609ms
+26 silly audit report {}
+27 verbose cwd /home/naasir/.cache/typescript/5.6
+28 verbose os Linux 5.10.16.3-microsoft-standard-WSL2
+29 verbose node v23.1.0
+30 verbose npm  v10.9.0
+31 verbose exit 0
+32 info ok

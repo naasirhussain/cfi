@@ -757,3 +757,561 @@ git commit -m "hello cfi"
 git push origin main
 cat .ignore
 ls
+if config
+ifconfig
+cd
+git clone git@github.com:suhailroushan13/naasir-cfi.git
+mkdir numbersystem
+cd numbersystem
+ls
+cd ..
+git add .
+git commit -m "numbersystem"
+cd 
+git clone C:\Users\91863\Downloads\Number System.pdf
+cd
+cd 
+git clone git@github.com:suhailroushan13/naasir-cfi.git
+mkdir numbersystem
+cd numbersystem
+touch numbersystem
+ls
+ll
+cd ..
+ll
+cd naasir
+cd naasir-cfi
+ls
+git add .
+git commit -m "ns"
+git push origin main
+git push
+git push origin master
+cd
+ll
+cd
+mkdir chmod
+rm -rf
+rm -rf chmod
+cd
+touch mobile
+touch mobile.txt
+nano mobile.txt
+ll
+sudo chmod 055 mobile.txt
+cat mobile.txt
+sudo cat mobile.txt
+sudo chmod 777 mobile.txt
+cat mobile.txt
+cat avengers
+cd avengers
+cat avengers
+cd ..
+sudo chmod 044 mobile.txt
+cat mobile.txt
+sudo cat mobile.txt
+cat mobile.txt
+sudo su
+ifconfig
+clear
+exit
+ls
+history
+ls
+history
+service cron start
+sudo service cron start
+vrontab -e
+crontab -e
+date
+ls
+cd
+cal
+ls
+whoami
+man ls
+man mkdir
+whatis la
+whatis ls
+whatis touch
+whatis rm -rf
+cd
+cd /home/naasir
+cd /home
+cd naasir
+ls
+cd /
+ls
+cd
+mkdir .ismail && omer
+mkdir .ismail && mkdir omer
+ls
+ls -a
+rm -rf .ismail
+rm -rf omer
+ls -lh
+mkdir dummy
+ls -lh
+touch dummy.txt
+ls -lh
+nano touch.txt
+ls -lh
+cat dummy.txt
+nano dummy.txt
+ls -lh
+cat dummy.txt
+mkdir -p folder1/folder2/folder3
+ls
+cd folder1
+ls
+cd folder2
+ls
+ls /etc
+cd
+ls /etc
+cd folder3
+cd folder1
+ls
+cd folder 2
+cd folder2
+cd folder3
+ls
+ls /
+ls /home/
+ls /avengers
+ls /anas
+cd
+ls
+cd
+touch -t
+cat touch -t
+cd
+rm -i
+rm -i dummy.txt
+ls
+rm -i dummy
+yes
+ls
+cl
+rm -i dummy
+rm -i mobile.txt
+ls
+cd
+ls
+mkdir dir2
+cp hello.txt dir2
+ls dir2
+mkdir ismail
+mkdir omer
+cd omer 
+touch omer.txt
+cd 
+ls
+cp -r /home/naasir/omer/ /home/naasir/ismail/
+cd ismail/
+ls
+cd ..
+ls
+mkdir cfi1
+mkdir cfi2
+mv /home/naasir/cfi1 /home/naasir/cfi2
+cd cfi2
+ls
+cd
+ls -h
+ls -l
+lh
+ls -lh
+ls -h
+ls
+ls -al
+cd
+touch numbes.txt
+nano number.txt
+cat number.txt
+head numbers.txt
+head number.txt
+tail number.txt
+cd
+echo "good morning hyd" > hyd.txt
+cd hyd.txt
+ls
+cd hyd.txt
+cat hyd.txt
+cd
+cat > dubai.txt <<stop
+hello 
+hi
+stop
+
+cat dubai.txt
+tac
+tac dubai.txt
+history
+cd
+ls
+cd
+mkdir share
+cd share
+touch why.txt
+nanp.txt
+nano.txt
+nano why.txt
+mv why.txt naasir.txt
+ifconfig
+phthon3 -m http.server 8899
+python3 -m http.server 8899
+python3 -m http.server 8899 &
+cd
+ps
+ps -f
+kill 240
+ps -f
+cd
+htop
+uptime
+htop
+gtop
+man gref
+man wc
+man sort
+man grep
+man wc
+sort naasir
+ls
+sort avengers
+sort number.txt
+grep avengers
+wc avengers
+cd
+sudo su
+mkdir vs code
+cd vscode
+cd
+sudo su
+ls
+touch script.sh
+nano script
+nano script.sh/
+ls
+rm -rf script,sh.save 
+nano script.sh/
+ls
+rm -rf script.sh/
+ls
+touch script.sh
+nano script.sh 
+ls
+sudo chmod 777 script.sh 
+ls
+crontab -r
+crontab -e
+ls
+cat time.txt
+cat time,txt
+cat time.txt
+crontab -l
+crontab -e
+crontab -l
+crontab -e
+crontab -l
+cd
+cd 
+ls
+crontab -l
+cd
+sudo su
+cd
+ls
+service cron script
+cd
+touch script.sh
+nano script.sh
+bash  script.sh
+ls
+rm -rf time_03-06.txt
+chmod 777 script.txt
+chmod 777 script.sh
+pwd
+crontab -e
+ls
+mkdir vs code
+cd vs code
+cd vscode
+mkdir vscode
+cd vscode
+nano vscode
+cat vscode
+crontab -r
+ls
+cat vscode
+code .
+sudo sanp install code
+sudo sanp install code --classic
+sudo snap install code --classic
+sudo snap install code
+ls
+ls -lh
+rm -rf vscode
+nano vscode.txt
+ls
+cd naasir
+cd ..
+ls
+cd codings
+ls
+cd codingd
+cd codings
+cd
+sudo apt update
+sudo apt upgrade
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+nvm install 23
+sudo nvm install 23
+nvm install 23
+node -v
+npm -v
+node -v\
+node -v
+npm -v
+cd
+git clone git@github.com:codeforindia-foundation/CFI-C24-Classwork.git
+ls
+cd CFI-C24-Classwork/
+ls -a
+git branch
+git pull origin main
+rm -rf *.txt
+ls
+cd 
+rm -rf *.txt
+ls
+cd CFI-C24-Classwork/
+cd phase1
+cd Phase1
+ls
+git pull origin main
+ls
+cd 4.javascript
+cd 4.JavaScript/
+explorer.exe .
+cf
+cd 
+cd naasir-cfi
+ls
+mkdir javascript
+code .
+ls
+cd
+ls
+ls naasir
+cd naasir
+git add .
+git commit -m "hi.js"
+git branch
+git push origin master
+git branch
+git add .
+git commit-m "java script practice"
+git commit -m "js practice"
+git push origin master
+node 1.js
+node 1.js
+node 2.js
+node 3.js
+node 4.js
+node 5.js
+node 6.js
+node 7.js
+git add .
+git commit -m "claassroom js"
+git push origin master
+cd ..
+node 1.js
+node 1.js
+node 1.js
+node 1.js
+cd
+git clone git@github.com:suhailroushan13/naasir-cfi.git
+cd naasir=cfi
+cd naasir-cfi/
+mkdir claasromm
+cd claasroom
+rm -rf claasromm
+mkdir classroom
+cd classroom/
+code .
+cd
+git clone git@github.com:naasirhussain/javascript-practice.git
+git add .
+git commit -m "js practice"
+git push origin master.
+git push origin master
+rm -rf *Zone.Identifier
+git add .
+git commit -m "js practice"
+git push origin master
+git push origin main
+node 11.js
+node f11.js
+node f12.js
+node f9.js
+ls
+node 9.js 
+node 10.js 
+node 11.js 
+node 12.js 
+node 12,js 
+
+node o2.js
+node operators o2.js
+node o2.js
+pwd
+ls
+cd Operators/
+ls
+node o2.js
+node o3.js
+cd ..
+git add .
+git commit -m"10,11,12,13-js files"
+git push origin main
+git branch
+git push origin master
+cd ..
+cd javascript
+git add .
+git commit -m"30/10/24"
+git commit -m"file 10.js-13.js and operators"
+git push origin master
+git add .
+git commit -m"9.js to 13.js"
+git push origin master
+cd
+git clone git@github.com:suhailroushan13/naasir-cfi.git
+cd javascript
+cd javascript/
+cd
+cd naasir-cfi/
+cd javascript/
+cd
+git clone git@github.com:suhailroushan13/naasir-cfi.git
+cd naasir-cfi/
+cd javascript/
+git add .
+git commit -m"files and operators"
+girt branch
+git branch
+git push origin master
+cd ..
+cd
+cd javascript-practice/
+git add .
+git commit -m"6.js to 13.js and operators"
+git push origin main
+node o4.js
+cd Operators
+node o4.js
+node o5.js
+node o7.js
+node o8.js
+cd ..
+cd javascript
+ls
+ls
+git add .
+git commit -m "operators"
+git branch
+git push origin master
+ls
+cd naasir-cfi/
+ls
+cd classroom/
+ls
+code .
+ls
+code .
+node 16.js
+node 17.js
+node 18.js
+node 15.js
+node 16.js
+node o8.js
+node 6.js
+node 7.js
+node 19.js
+cl
+clear
+nopde 19.js
+node 19.js
+node 20.js
+git add .
+git coomit -m"till 4//11/24"
+git branch
+git push origin master
+git add .
+git commit -m "upaste till 4/11/24"
+git push origin master
+nodee 18.js
+node 18.js
+node 21.js
+node 22.js
+node 21.js
+node 22.js
+node 23.js
+node 24.js
+git add .
+git commit -m "functions"
+git push origin master
+node 25.js
+node 26.js
+node 27.js
+node 26.js
+node 27.js 
+cd
+ls
+cfi c24
+mkdir naasirJavascript
+cd naasirJavascript/
+code .
+node console.log 
+node co
+node console.log 
+cl
+cls
+node var.js 
+node let.js 
+node const.js 
+node Op-prim-1.js
+node oper-1.js
+node oper-2.js
+node oper-3.js
+c
+node oper-3.js
+node 5.js
+node type\ con-1.js 
+node 15.js
+node type\ con-1.js 
+node 15.js
+node type\ con-1.js 
+node type\ con-2.js 
+git add .
+git commit -m "special task-1"
+git branch 
+git push origin master
+git add .
+git commit -m "special-Task-1"
+\git add .
+git commit -m "special task 1"
+git push origin master
+cd
+naasir
+cd
+cd naasir
+cd
+cls
+cd
+cd naasir
+cd naasirJavascript
+git add .
+git commit -m "special task-1"

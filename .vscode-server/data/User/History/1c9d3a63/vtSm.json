@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true,
+    "workbench.colorTheme": "Hack The Box",
+    "workbench.iconTheme": "vscode-icons"
+}

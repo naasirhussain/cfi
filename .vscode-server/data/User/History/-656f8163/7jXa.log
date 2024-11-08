@@ -1,0 +1,5 @@
+console.log("Mohammad");      // Mohammad
+console.log("naasir");        
+console.log("hussain");
+console.log(30);             // 30
+conaole.log(30 + 40);

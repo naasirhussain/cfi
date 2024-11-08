@@ -1,0 +1,29 @@
+2024-11-03 06:26:08.714 [info] [main] Log level: Info
+2024-11-03 06:26:08.715 [info] [main] Validating found git in: "git"
+2024-11-03 06:26:08.715 [info] [main] Using git "2.43.0" from "git"
+2024-11-03 06:26:08.715 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-03 06:26:08.715 [info] > git rev-parse --show-toplevel [333ms]
+2024-11-03 06:26:08.719 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-11-03 06:26:08.761 [info] [Model][openRepository] Opened repository: /home/naasir/naasir-cfi
+2024-11-03 06:26:08.800 [info] > git config --get commit.template [15ms]
+2024-11-03 06:26:08.902 [info] > git rev-parse --show-toplevel [108ms]
+2024-11-03 06:26:08.947 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [98ms]
+2024-11-03 06:26:08.949 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-03 06:26:08.981 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-03 06:26:09.078 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [17ms]
+2024-11-03 06:26:09.090 [info] > git status -z -uall [83ms]
+2024-11-03 06:26:09.093 [info] > git rev-parse --show-toplevel [16ms]
+2024-11-03 06:26:09.109 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-03 06:26:09.176 [info] > git config --get commit.template [2ms]
+2024-11-03 06:26:09.178 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [26ms]
+2024-11-03 06:26:09.221 [info] > git show --textconv :classroom/Operators/o4.js [7ms]
+2024-11-03 06:26:09.221 [info] > git config --local branch.master.vscode-merge-base [28ms]
+2024-11-03 06:26:09.309 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [83ms]
+2024-11-03 06:26:09.326 [info] > git ls-files --stage -- /home/naasir/naasir-cfi/classroom/Operators/o4.js [106ms]
+2024-11-03 06:26:09.336 [info] > git merge-base refs/heads/master refs/remotes/origin/master [15ms]
+2024-11-03 06:26:09.346 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [46ms]
+2024-11-03 06:26:09.354 [info] > git cat-file -s 8c8cc9ca80f98b1d28b17269279ddc591d618861 [21ms]
+2024-11-03 06:26:09.369 [info] > git diff --name-status -z --diff-filter=ADMR cb677cbaa4af789d91cc9f32d5c4f4162d2c0241...refs/remotes/origin/master [24ms]
+2024-11-03 06:26:09.388 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-11-03 06:26:09.390 [info] > git status -z -uall [9ms]
+2024-11-03 06:26:09.607 [info] > git check-ignore -v -z --stdin [191ms]

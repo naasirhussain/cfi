@@ -1,0 +1,8 @@
+// keywords of java cannot use for variables
+
+// ex
+
+var null = 'hello1';
+var try = 'hello2';
+var let = 'hello3';
+console.log()
