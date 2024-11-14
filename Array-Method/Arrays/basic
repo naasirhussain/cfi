@@ -1,0 +1,43 @@
+// Array :- It is a collection of elements or items
+/* 
+CRUD Operations
+C --> Create
+R --> Read
+U --> Update
+D --> Delete
+*/
+
+let fruits =    ["apple", "banana", "orange", "mango"]
+// Index value       0        1         2        3 
+// Array  starts from 0th Index
+console.log(fruits);  // prints ALL
+console.log(fruits[1]); // banana only
+
+
+
+
+let storage = ["hello", 50, "30", true, undefined, null, {fname:"naasir", age:22}, [40,30,50]];
+// Index           0    1     2     3     4          5                6                7
+//                                                           fname         age      0   1   2
+
+console.log(storage[2])    // 30
+console.log(storage[4])     // undefined
+console.log(storage[7][1])   // 30
+console.log(storage[6].age)  // 22
+
+// Adding :-
+storage[8] = "suhail Rosuhan";
+console.log(storage);  // added suhail roushan in row
+
+storage[15] = 350;
+console.log(storage); // gives < 6 empty items and prints 350.
+
+// Update :-
+storage[2] = 70;
+storage[3] = false;
+storage[6].age = 25;
+console.log(storage);   // upated in details-- 7, false, age:25.
+
+//Delete :-
+delete storage[5];
+console.log(storage);  // 5- null deleted but space will remains empty
